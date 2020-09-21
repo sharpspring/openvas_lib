@@ -992,7 +992,7 @@ class VulnscanManager(object):
 
 		m_response = etree.tostring(m_response)
 
-		return report_parser_from_text(m_response)
+		return report_parser_from_text(str(m_response))
 
 	# ----------------------------------------------------------------------
 	def get_raw_xml(self, task_id):
